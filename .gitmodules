@@ -1,0 +1,13 @@
+[submodule "bisicles/master"]
+	path = bisicles/master
+	url = https://github.com/ggslc/bisicles-uob.git
+	ignore = dirty
+[submodule "bisicles/Chombo"]
+	path = bisicles/Chombo
+	url = https://github.com/applied-numerical-algorithms-group-lbnl/Chombo_3.2.git
+	ignore = dirty
+[submodule "bisicles/petsc-src"]
+	path = bisicles/petsc-src
+	url = https://gitlab.com/petsc/petsc.git
+	branch = release
+	ignore = dirty
