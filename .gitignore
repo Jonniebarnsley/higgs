@@ -11,3 +11,6 @@
 .vim/
 .viminfo
 .vimrc
+
+# folders
+bisicles/petsc

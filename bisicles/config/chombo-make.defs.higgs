@@ -1,0 +1,22 @@
+# Chombo config for Higgs (foss/2025a)
+makefiles      += local/Make.defs.higgs
+
+MPI            = TRUE
+OPT            = TRUE
+DEBUG          = FALSE
+USE_64         = TRUE
+
+CXX            = g++
+FC             = gfortran
+MPICXX         = mpicxx
+CH_CPP         = $(CXX) -E -P
+
+cxxoptflags   += -march=znver4 -O2 -ftree-vectorize -ffast-math -funroll-loops -fPIC
+foptflags     += -march=znver4 -O2 -ftree-vectorize -ffast-math -funroll-loops -fPIC
+syslibflags   += -lgfortran -lm
+
+USE_HDF        = TRUE
+HDFINCFLAGS    = -I$(EBROOTHDF5)/include
+HDFLIBFLAGS    = -L$(EBROOTHDF5)/lib -lhdf5 -lz
+HDFMPIINCFLAGS = -I$(EBROOTHDF5)/include
+HDFMPILIBFLAGS = -L$(EBROOTHDF5)/lib -lhdf5 -lz
