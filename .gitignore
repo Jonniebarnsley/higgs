@@ -1,0 +1,13 @@
+# hidden files
+.Xauthority
+.bash_history
+.bash_logout
+.bash_profile
+.cache/
+.emacs
+.kshrc
+.python_history
+.ssh/
+.vim/
+.viminfo
+.vimrc
