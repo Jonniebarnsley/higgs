@@ -11,6 +11,10 @@
 .vim/
 .viminfo
 .vimrc
+.bashrc
+.bashrc.d/
+
 
 # folders
-bisicles/petsc
+projections/
+bisicles/petsc/
